@@ -1,0 +1,15 @@
+{
+  "name": "employee_tracker",
+  "version": "1.0.0",
+  "description": "employee_database_manager",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Stanley Opare",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^8.2.4",
+    "mysql2": "^2.2.5"
+  }
+}
