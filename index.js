@@ -57,7 +57,6 @@ const addDepartmentQuestions = [
     }
 ]
 
-
 // Create a function to show sql screen output
 function start(){
     inquirer.prompt(questions)
