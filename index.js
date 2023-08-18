@@ -93,18 +93,6 @@ function start(){
     });
 }
 
-// SQL commands for each query table
-const allEmployees = `SELECT employee.id,
-                             employee.first_name,
-                             employee.last_name,
-                             role.title,
-                             department.name AS department,
-                             role.salary,
-                             employee.manager_id AS manager
-                      FROM employee
-                      JOIN role ON employee.role_id = role.id
-                      JOIN department ON role.department_id = department.id;`
-
 const allRoles = `SELECT role.id,
                          role.title,
                          department.name AS department,
@@ -235,7 +223,7 @@ function addEmployee() {
     });
 }
 
-    // Update Employee Role
+// Update Employee Role
 function updateEmployeeRole() {
     db.query('SELECT id, CONCAT(first_name, " ", last_name) AS full_name FROM employee', (err, result) => {
         if (err) {
@@ -292,7 +280,7 @@ function updateEmployeeRole() {
 }
 
 
-    // View All Roles
+// View All Roles
 function viewAllRoles() {
     db.query(allRoles, (err, result) => {
         if (err) {
@@ -353,7 +341,7 @@ function addRole() {
     });
 }
 
-    // View All Departments
+// View All Departments
 function viewAllDepartments() {
     db.query('SELECT * FROM department', (err, result) => {
         if (err) {
@@ -367,7 +355,7 @@ function viewAllDepartments() {
     });
 }
 
-    // Add Department
+// Add Department
 function addDepartment() {
     inquirer.prompt(addDepartmentQuestions)
     .then(response => {
