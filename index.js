@@ -235,8 +235,6 @@ function addEmployee() {
     });
 }
 
-
-
     // Update Employee Role
 function updateEmployeeRole() {
     db.query('SELECT id, CONCAT(first_name, " ", last_name) AS full_name FROM employee', (err, result) => {
