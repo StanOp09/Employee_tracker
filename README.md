@@ -55,7 +55,6 @@
 
   ## Credits
   - Sean Roshan
-  - Chat GPT
   - [NPM](https://www.npmjs.com/)
   - [NodeJS](https://nodejs.org/en)
   - [Inquirer](https://www.npmjs.com/package/inquirer)
